@@ -46,8 +46,16 @@ function printQuote() {
   let getId = document.getElementById('quote-box');
   getId.innerHTML = html;
 
+  let changeColor = document.getElementById('body-change');
+  changeColor.style.backgroundColor = randomBackgroundColor();
 }
 
-function
+function randomBackgroundColor() {
+  let red = Math.floor(Math.random() * 255);
+  let green = Math.floor(Math.random() * 255);
+  let blue = Math.floor(Math.random() * 255);
+
+  return "rgb(" + red + "," + green + "," + blue + ")";
+}
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);

@@ -51,6 +51,7 @@ function printQuote() {
 }
 
 function randomBackgroundColor() {
+  //gets random number for each color
   let red = Math.floor(Math.random() * 255);
   let green = Math.floor(Math.random() * 255);
   let blue = Math.floor(Math.random() * 255);
